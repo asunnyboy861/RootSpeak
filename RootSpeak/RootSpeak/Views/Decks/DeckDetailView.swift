@@ -118,7 +118,7 @@ struct StatItem: View {
         VStack(spacing: 4) {
             Image(systemName: icon)
                 .font(.title3)
-                .foregroundStyle(Color.accentColor)
+                .foregroundStyle(.accent)
             Text(value)
                 .font(.title2)
                 .fontWeight(.bold)
@@ -152,7 +152,7 @@ struct CardRowView: View {
                     try? audioEngine.play(fileName: card.audioFileName!)
                 } label: {
                     Image(systemName: "speaker.wave.2")
-                        .foregroundStyle(Color.accentColor)
+                        .foregroundStyle(.accent)
                 }
                 .buttonStyle(.borderless)
             }

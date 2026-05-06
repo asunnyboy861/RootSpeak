@@ -1,6 +1,6 @@
 # Pricing Configuration
 
-## Monetization Model: Subscription (IAP) + One-Time Purchase
+## Monetization Model: Subscription (IAP)
 
 ## Subscription Group
 - **Group Name**: RootSpeak Premium
@@ -13,7 +13,7 @@
 - **Product ID**: `com.zzoutuo.RootSpeak.monthly`
 - **Price**: $2.99 per month
 - **Display Name**: RootSpeak+ Monthly
-- **Description**: Unlimited decks, CloudKit sync, sharing
+- **Description**: Unlimited decks, sync, sharing
 - **Localization**: English (US)
 
 ### 2. Yearly Subscription
@@ -21,7 +21,7 @@
 - **Product ID**: `com.zzoutuo.RootSpeak.yearly`
 - **Price**: $19.99 per year (44% savings vs monthly)
 - **Display Name**: RootSpeak+ Yearly
-- **Description**: Unlimited decks, sync, sharing, best value
+- **Description**: Best value, all premium
 - **Localization**: English (US)
 
 ### 3. Lifetime Purchase
@@ -29,7 +29,7 @@
 - **Product ID**: `com.zzoutuo.RootSpeak.lifetime`
 - **Price**: $9.99 one-time
 - **Display Name**: RootSpeak Community
-- **Description**: Unlimited decks, sync, sharing forever
+- **Description**: All features forever
 - **Localization**: English (US)
 
 ## Free Tier Features
@@ -59,8 +59,8 @@
 - Terms of Use: Yes (REQUIRED for subscription apps)
 
 ## Apple IAP Compliance Checklist
-- [ ] Auto-renewal terms included in Terms
-- [ ] Cancellation instructions included
-- [ ] Pricing clearly stated
-- [ ] Free trial terms included
-- [ ] Restore purchases functionality implemented
+- [x] Auto-renewal terms included in Terms
+- [x] Cancellation instructions included
+- [x] Pricing clearly stated
+- [x] Free trial terms included
+- [x] Restore purchases functionality implemented

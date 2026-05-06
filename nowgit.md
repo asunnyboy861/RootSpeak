@@ -1,89 +1,70 @@
-# RootSpeak - Indigenous Language Flashcard Creator
+# Git Repositories
 
-## App Overview
-RootSpeak is an iOS app that helps users create, study, and share flashcards for indigenous and endangered languages. It uses the FSRS-6 spaced repetition algorithm to optimize learning retention and supports audio recording for pronunciation preservation.
+## Main App (iOS Application)
 
-## Key Features
-- Create custom flashcard decks for any indigenous language
-- Audio recording for pronunciation capture and playback
-- FSRS-6 spaced repetition algorithm for optimal study scheduling
-- Study statistics with streak tracking and retention rates
-- CloudKit sync across Apple devices (Premium)
-- Community deck sharing (Premium)
+| Item | Value |
+|------|-------|
+| **Repository Name** | RootSpeak |
+| **Git URL** | git@github.com:asunnyboy861/RootSpeak.git |
+| **Repo URL** | https://github.com/asunnyboy861/RootSpeak |
+| **Visibility** | Public |
+| **Primary Language** | Swift |
+| **GitHub Pages** | Enabled (from `/docs` folder) |
 
-## Technical Stack
-- **Language**: Swift 6.0
-- **Framework**: SwiftUI, AVFoundation, PhotosUI
-- **Data**: SwiftData with @Model macros
-- **Cloud**: CloudKit (privacy-first, no server costs)
-- **Spaced Repetition**: FSRS-6 algorithm (custom implementation)
-- **Audio**: AVAudioRecorder + AVAudioPlayer (native)
+## Policy Pages (Deployed from Main Repository /docs)
 
-## Monetization
-- **Free**: 3 decks, 50 cards per deck, local storage
-- **RootSpeak+ Monthly**: $2.99/month
-- **RootSpeak+ Yearly**: $19.99/year (44% savings)
-- **RootSpeak Community**: $9.99 one-time lifetime
+| Page | URL | Status |
+|------|-----|--------|
+| Landing Page | https://asunnyboy861.github.io/RootSpeak/ | Pending |
+| Support | https://asunnyboy861.github.io/RootSpeak/support.html | Pending |
+| Privacy Policy | https://asunnyboy861.github.io/RootSpeak/privacy.html | Pending |
+| Terms of Use | https://asunnyboy861.github.io/RootSpeak/terms.html | Pending |
 
-## App Store Information
-- **Bundle ID**: com.zzoutuo.RootSpeak
-- **Category**: Education
-- **Age Rating**: 4+
-- **Minimum iOS**: 17.0
+Note: Terms of Use required for IAP subscription apps.
 
-## Policy Pages
-- Support: https://asunnyboy861.github.io/RootSpeak/support.html
-- Privacy: https://asunnyboy861.github.io/RootSpeak/privacy.html
-- Terms: https://asunnyboy861.github.io/RootSpeak/terms.html
+## Repository Structure
 
-## Project Structure
 ```
 RootSpeak/
-├── RootSpeak/
-│   ├── RootSpeakApp.swift
-│   ├── ContentView.swift
-│   ├── Models/
-│   │   ├── Language.swift
-│   │   ├── Deck.swift
-│   │   ├── Card.swift
-│   │   ├── Review.swift
-│   │   └── Progress.swift
-│   ├── Services/
-│   │   ├── FSRSScheduler.swift
-│   │   ├── AudioEngine.swift
-│   │   └── DataManager.swift
-│   └── Views/
-│       ├── Home/HomeView.swift
-│       ├── Decks/
-│       │   ├── DeckListView.swift
-│       │   ├── DeckDetailView.swift
-│       │   └── DeckCreationView.swift
-│       ├── Cards/CardCreationView.swift
-│       ├── Study/StudySessionView.swift
-│       ├── Statistics/StatisticsView.swift
-│       └── Settings/
-│           ├── SettingsView.swift
-│           └── ContactSupportView.swift
-├── us.md
-├── price.md
-├── capabilities.md
-├── icon.md
-└── nowgit.md
+├── RootSpeak/                                # iOS App Source Code
+│   ├── RootSpeak.xcodeproj/                  # Xcode Project
+│   ├── RootSpeak/                            # Swift Source Files
+│   │   ├── RootSpeakApp.swift
+│   │   ├── ContentView.swift
+│   │   ├── Models/
+│   │   │   ├── Language.swift
+│   │   │   ├── Deck.swift
+│   │   │   ├── Card.swift
+│   │   │   ├── Review.swift
+│   │   │   └── Progress.swift
+│   │   ├── Services/
+│   │   │   ├── FSRSScheduler.swift
+│   │   │   ├── AudioEngine.swift
+│   │   │   └── DataManager.swift
+│   │   └── Views/
+│   │       ├── Home/HomeView.swift
+│   │       ├── Decks/
+│   │       │   ├── DeckListView.swift
+│   │       │   ├── DeckDetailView.swift
+│   │       │   └── DeckCreationView.swift
+│   │       ├── Cards/CardCreationView.swift
+│   │       ├── Study/StudySessionView.swift
+│   │       ├── Statistics/StatisticsView.swift
+│   │       └── Settings/
+│   │           ├── SettingsView.swift
+│   │           └── ContactSupportView.swift
+│   └── Assets.xcassets/
+├── docs/                          # Policy Pages (GitHub Pages source)
+│   ├── index.html                 # Landing Page
+│   ├── support.html               # Support Page
+│   ├── privacy.html               # Privacy Policy
+│   └── terms.html                 # Terms of Use (subscription)
+├── .github/workflows/
+│   └── deploy.yml                 # GitHub Pages deployment
+├── us.md                          # English Development Guide
+├── keytext.md                     # App Store Metadata
+├── capabilities.md                # Capabilities Configuration
+├── icon.md                        # App Icon Details
+├── price.md                       # Pricing Configuration
+└── nowgit.md                      # This File
 ```
-
-## Development Status
-- [x] Project setup and configuration
-- [x] Data models (Language, Deck, Card, Review, Progress)
-- [x] FSRS-6 spaced repetition scheduler
-- [x] Audio recording and playback engine
-- [x] Home view with daily review and streak
-- [x] Deck management (CRUD)
-- [x] Card creation with audio and images
-- [x] Study session with rating system
-- [x] Statistics dashboard
-- [x] Settings with paywall
-- [x] Contact support with feedback API
-- [ ] CloudKit sync implementation
-- [ ] In-app purchase integration
-- [ ] Community deck sharing
-- [ ] Widget support

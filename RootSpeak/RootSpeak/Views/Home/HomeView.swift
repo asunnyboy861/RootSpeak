@@ -138,7 +138,7 @@ struct DeckRowView: View {
                 .frame(width: 44, height: 44)
                 .overlay {
                     Image(systemName: "square.stack.3d.up")
-                        .foregroundStyle(Color.accentColor)
+                        .foregroundStyle(.accent)
                 }
 
             VStack(alignment: .leading, spacing: 2) {

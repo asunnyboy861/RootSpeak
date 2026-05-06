@@ -13,15 +13,16 @@ Based on operation guide analysis:
 
 | Capability | Status | Method |
 |------------|--------|--------|
-| Microphone (Audio Recording) | Required | Info.plist NSMicrophoneUsageDescription |
-| Photo Library | Required | Info.plist NSPhotoLibraryUsageDescription |
-| User Notifications | Required | Info.plist permission request |
+| Microphone (Audio Recording) | Configured | Info.plist NSMicrophoneUsageDescription |
+| Photo Library | Configured | Info.plist NSPhotoLibraryUsageDescription |
+| User Notifications | Configured | Info.plist permission request |
 
 ## Manual Configuration Required
 
 | Capability | Status | Steps |
 |------------|--------|-------|
 | CloudKit (iCloud) | Pending | 1. Open Xcode > Signing & Capabilities > + Capability > iCloud 2. Check CloudKit checkbox 3. Create or select CloudKit container: iCloud.com.zzoutuo.RootSpeak 4. Xcode will generate entitlements file automatically |
+| In-App Purchase | Pending | 1. Open Xcode > Signing & Capabilities > + Capability > In-App Purchase 2. Configure StoreKit Testing in scheme settings |
 
 ## No Configuration Needed
 - HealthKit: Not applicable
@@ -31,8 +32,7 @@ Based on operation guide analysis:
 - Camera: Using PhotosUI picker (no direct camera access needed)
 - Background Modes: Not needed (local notifications only)
 - Push Notifications: Using local UserNotifications only
-- In-App Purchase: Will be configured in Phase 3 based on price.md
 
 ## Verification
-- Build succeeded after configuration: Pending
-- All entitlements correct: Pending
+- Build succeeded after configuration: Yes
+- All entitlements correct: Pending (CloudKit and IAP require manual setup)

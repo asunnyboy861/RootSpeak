@@ -78,7 +78,7 @@ struct StudySessionView: View {
                         } label: {
                             Image(systemName: "speaker.wave.2.circle.fill")
                                 .font(.system(size: 44))
-                                .foregroundStyle(Color.accentColor)
+                                .foregroundStyle(.accent)
                         }
                     }
                 }
