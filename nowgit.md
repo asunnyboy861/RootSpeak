@@ -9,18 +9,18 @@
 | **Repo URL** | https://github.com/asunnyboy861/RootSpeak |
 | **Visibility** | Public |
 | **Primary Language** | Swift |
-| **GitHub Pages** | Enabled (from `/docs` folder) |
+| **GitHub Pages** | ✅ **ENABLED** (from `/docs` folder) |
 
 ## Policy Pages (Deployed from Main Repository /docs)
 
 | Page | URL | Status |
 |------|-----|--------|
-| Landing Page | https://asunnyboy861.github.io/RootSpeak/ | Pending |
-| Support | https://asunnyboy861.github.io/RootSpeak/support.html | Pending |
-| Privacy Policy | https://asunnyboy861.github.io/RootSpeak/privacy.html | Pending |
-| Terms of Use | https://asunnyboy861.github.io/RootSpeak/terms.html | Pending |
+| Landing Page | https://asunnyboy861.github.io/RootSpeak/ | ✅ Active |
+| Support | https://asunnyboy861.github.io/RootSpeak/support.html | ✅ Active |
+| Privacy Policy | https://asunnyboy861.github.io/RootSpeak/privacy.html | ✅ Active |
+| Terms of Use | https://asunnyboy861.github.io/RootSpeak/terms.html | ✅ Active |
 
-Note: Terms of Use required for IAP subscription apps.
+**Note**: Terms of Use required for IAP subscription apps.
 
 ## Repository Structure
 
